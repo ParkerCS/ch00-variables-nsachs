@@ -78,6 +78,8 @@ pennies = round(count-dollars-quarters-dimes-nickels) // 0.01
 print("Problem #6: You have", dollars,"dollars,", quarters, "quarters,", dimes, "dimes,", nickels, "nickels, and", pennies, "pennies.")
 
 #the first part of this runs correctly, but I'm not sure why the quarters, dimes, nickels, and, pennies are all wrong.
+# Lee - PEMDAS got you on the quarters line.  Floor falls in the same category as division.  The floor occurred before the subtraction which is not what you wanted. Caused everything else to calculate incorrectly. (-2)
+
 
 #PROBLEM 7 (Variable Swap - 2pts)
 # Can you think of a way to swap the values of two variables that does not
